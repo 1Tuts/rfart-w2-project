@@ -3,6 +3,7 @@
 }
 body{
 	padding-top: 10px;
+	margin:0px auto;
 	background-image: url(images/bbg.jpg);
 
 }
@@ -13,7 +14,7 @@ div.container {
 }
 div.container div.lmenu {
 	min-height:580px;
-	background:url(images/about.jpg) no-repeat;
+	background:url(images/about2.png) no-repeat;
 	-webkit-transition:all 2100ms inline;
 	-moz-transition:all 2100ms inline;
 	border:2px solid #588c00;
@@ -60,6 +61,9 @@ div.container div.rmenu div.slider {
 	border:1px solid #588c00;
 	border-radius:7px;
 }
+
+/************************************** MENU TOP */
+
 div.container div.rmenu div.slider div.top_menu {
 	margin-top:0px;
 	min-height:85px;
@@ -78,6 +82,7 @@ div.container div.rmenu div.slider div.top_menu li {
 	float: left;
 	text-align:center;
 	padding: 10px 30px 10px 40px;
+	margin-right:10px;
 }
 div.container div.rmenu div.slider div.top_menu li:hover {
 	font-weight:bold;
@@ -85,8 +90,10 @@ div.container div.rmenu div.slider div.top_menu li:hover {
 	-moz-transition:all 2800ms inline;
 }
 div.container div.rmenu div.slider div.top_menu li:first-child {
-	margin-left:75px;
+	margin-left:50px;
 }
+
+/************************************** MENU PICS Below */
 
 div.container div.rmenu div.slider div.thumbs {
 	background:url(images/under.png) no-repeat;
@@ -100,6 +107,7 @@ div.container div.rmenu div.slider div.thumbs {
 	border:1px solid #333;
 	border-radius:7px;
 }
+
 div.container div.rmenu div.slider div.thumbs ul.home_pic {
 	list-style-type:none;
 	text-align:center;

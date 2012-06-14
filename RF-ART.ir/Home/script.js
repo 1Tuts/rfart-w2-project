@@ -3,6 +3,8 @@ $(function(){
 	var rmenu = $("div.rmenu");
 	var imgl = $("div.r");
 	var top_menu = $("div.top_menu");
+
+
 	var slider = $("div.rmenu div.slider");
 	var li_glass = $("div.thumbs li.glass");
 	var li_boy = $("div.thumbs li.boy");
@@ -60,16 +62,16 @@ $(function(){
 	});
 });
 
-//////////////////////////////////// SlideShow
+
 $(function(){
 	(slideshow=function (){
-		$('.img4').fadeOut(3000,null,function(){
-			$('.img3').fadeOut(3000,null,function(){
-				$('.img2').fadeOut(3000,null,function(){
-					$('.img1').fadeIn(3000,null,function(){
-						$('.img2').fadeIn(3000,null,function(){
-							$('.img3').fadeIn(3000,null,function(){
-								$('.img4').fadeIn(3000,null,function(){
+		$('.img4').fadeOut(4000,null,function(){
+			$('.img3').fadeOut(4000,null,function(){
+				$('.img2').fadeOut(4000,null,function(){
+					$('.img1').fadeIn(4000,null,function(){
+						$('.img2').fadeIn(4000,null,function(){
+							$('.img3').fadeIn(4000,null,function(){
+								$('.img4').fadeIn(4000,null,function(){
 									slideshow();
 								})
 							})

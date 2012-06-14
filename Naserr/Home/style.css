@@ -1,57 +1,74 @@
+*{
+	font-family:comic Sans Ms;
+}
 body{
 	padding-top: 10px;
+	background-image: url(images/bbg.jpg);
+
 }
 div.container {
-	min-height:580px;
+	height:580px;
 	padding: 7px 0px 7px 0px;
+
 }
 div.container div.lmenu {
 	min-height:580px;
-	background:url(images/about.png) no-repeat;
-	-webkit-transition:all 800ms;
-	-moz-transition:all 800ms;
-	border-right:1px solid gray;
-	border-radius:0px 25px 25px 0px;
-}
-div.container div.rmenu {
-	min-height:580px;
-	background-color:lightgreen;
-	padding-top:1px;
-	-webkit-transition:all 800ms;
-	-moz-transition:all 800ms;
-	border:1px solid gray;
-	border-radius:7px;
-}
-div.container div.lmenu div.r img{
-	margin: 270px 0px 0px 166px;
-	-webkit-transition:all 800ms;
-	-moz-transition:all 800ms;
-	cursor: pointer;
-}
-div.container div.lmenu div.logo{
-	background: url(images/logo.png) no-repeat;
-	width:143px;
-	height:53px;
-	margin: 80px 20px;
+	background:url(images/about.jpg) no-repeat;
+	-webkit-transition:all 2100ms inline;
+	-moz-transition:all 2100ms inline;
+	border:2px solid #588c00;
+	border-radius:0px 17px 17px 0px;
 }
 
-										/* SLIDER */
+
+/************************************** Right Panel */
+div.container div.rmenu {
+	min-height:580px;
+	padding-top:1px;
+	-webkit-transition:all 2800ms inline;
+	-moz-transition:all 2800ms inline;
+	border:1px solid #588c00;
+	border-radius:7px;
+	
+}
+div.container div.lmenu div.r {
+	width:48px;
+	height:95px;
+	-webkit-transition:all 2800ms inline;
+	-moz-transition:all 2800ms inline;
+	cursor: pointer;
+	background-image:url(images/right.png);
+	margin: 270px 0px 0px 185px;
+	/*
+	position: absolute;
+	margin:0px auto;
+	left:0px;
+	right:532px;
+	top:270px;
+	bottom:0px;
+	*/
+}
+div.container div.lmenu div.r:hover {
+	background-image:url(images/right2.png);
+}
+
+
+
+/************************************** Slider */
 div.container div.rmenu div.slider {
 	min-height:580px;
-	background:url(images/4.jpg) top center no-repeat;
-	padding:1px;
-	border:1px solid gray;
+	border:1px solid #588c00;
 	border-radius:7px;
 }
 div.container div.rmenu div.slider div.top_menu {
-	margin-top:-3px;
+	margin-top:0px;
 	min-height:85px;
 	background:url(images/top_menu.png) no-repeat;
-	-webkit-transition:all 800ms;
-	-moz-transition:all 800ms;
+	-webkit-transition:all 2800ms inline;
+	-moz-transition:all 2800ms inline;
 	
 }
-div.container div.rmenu div.slider div.top_menu ul.top {
+div.container div.rmenu div.slider div.top_menu ul {
 	list-style-type:none;
 	text-align:center;
 	color:white;
@@ -61,6 +78,11 @@ div.container div.rmenu div.slider div.top_menu li {
 	float: left;
 	text-align:center;
 	padding: 10px 30px 10px 40px;
+}
+div.container div.rmenu div.slider div.top_menu li:hover {
+	font-weight:bold;
+	-webkit-transition:all 2800ms inline;
+	-moz-transition:all 2800ms inline;
 }
 div.container div.rmenu div.slider div.top_menu li:first-child {
 	margin-left:75px;
@@ -92,24 +114,63 @@ div.container div.rmenu div.slider div.thumbs li:first-child {
 	margin-left:80px;
 }
 div.container div.rmenu div.slider div.thumbs li img {
-border:1px solid black;
+border:2px solid #588c00;
 border-radius:25px 0px 25px 0px ;
 box-shadow: 10px 10px 5px black;
 }
 
+
+
+/************************************** Footer */
+
 div.footer{
-	min-height:80px;
-	background-color: #DDD;
+	margin: 10px 0px;
+	min-height:60px;
+	background:url(images/bg.jpg);
 }
 div.inside_footer{
-	min-height:50px;
-	background-color: lightblue;
+	height:60px;
+	
 }
 div.inside_footer div.desc{
+	color:white;
 	margin:15px auto;
 	min-height:40px;
 	text-align:center;
-	opacity: 0.5;
-	-moz-opacity: 0.5;
-	filter:alpha(opacity=5);
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+
+/************************************** Back Image */
+.backimg > div{
+	border:1px solid #588c00;
+	border-radius:7px;
+	position: absolute;
+	background-position:center top;
+	background-repeat:no-repeat;
+	top:20px;
+	left:210px;
+	right:0;
+	bottom:0;
+	z-index:-10;
+	width:740px;
+	height:580px;
+	margin:0px auto;
+}
+
+.img1{
+	background-image:url(images/1.jpg);
+}
+
+.img2{
+	background-image:url(images/2.jpg);
+}
+
+.img3{
+	background-image:url(images/3.jpg);
+}
+
+.img4{
+	background-image: url(images/4.jpg);
 }

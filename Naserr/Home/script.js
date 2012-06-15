@@ -13,9 +13,9 @@ $(function(){
 
 	var open_panel ;
 	imgl.click(function(){
-		//alert("dsfdsd");
+		
 		if(!open_panel){
-			lmenu.animate({'width':"20px",});
+			lmenu.animate({'width':"25px",});
 			rmenu.animate({'width':'915px',});
 			imgl.animate({'margin':'270px 0px 0px 10px',});
 			top_menu.css({'margin-left':'83px',});

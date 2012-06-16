@@ -1,0 +1,5 @@
+version 1.1 ( Updated: 3-25-2012 )
+- fixed non-default permalinks issue
+- improved main menu performance
+- added ability to use external links in the main menu
+	* js/custom.js
